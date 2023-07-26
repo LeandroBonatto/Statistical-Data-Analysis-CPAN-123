@@ -7,7 +7,8 @@ data = np.array(data_frame)
 sample_mean = np.mean(data)
 sample_std_dev = np.std(data, ddof=1)
 
-print('Sample Mean = {:.4f}'.format(sample_mean))
-print('Sample Standard Deviation = {:.4f}'.format(sample_std_dev))
+print('Sample Mean = {:.9f}'.format(sample_mean))
+print('Sample Variance = {:.9f}'.format(sample_std_dev ** 2))
+print('Sample Standard Deviation = {:.9f}'.format(sample_std_dev))
 
 print('>>> END <<<')
